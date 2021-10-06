@@ -1,5 +1,5 @@
 from unittest import TestCase
-from pascal.main import get_pascal
+from pascal import get_pascal
 
 
 class TestSuite(TestCase):
