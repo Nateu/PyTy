@@ -9,6 +9,7 @@ python = "^3.9"
 introductie = "^0.1.4"
 coverage = "^6.0"
 black = "^21.9b0"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

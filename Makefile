@@ -1,12 +1,13 @@
-default:
-	poetry run black **/*.py
-	bash ./scripts/unit_test.sh
+default: format flake pytest
 
 serve:
 	bash ./scripts/serve.sh
 
-test:
-	bash ./scripts/unit_test.sh
+pytest:
+	bash ./scripts/pytest.sh
 
 format:
-	poetry run black **/*.py
+	bash ./scripts/black.sh
+
+flake:
+	bash ./scripts/flake8.sh
