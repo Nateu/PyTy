@@ -1,7 +1,5 @@
 default:
-	poetry run coverage run -m pytest && \
-	poetry run coverage report -m && \
-	poetry run coverage html
+	bash ./scripts/unit_test.sh
 
 serve:
-	bash serve.sh
+	bash ./scripts/serve.sh
