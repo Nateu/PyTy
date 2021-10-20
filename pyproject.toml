@@ -8,6 +8,7 @@ authors = ["Pascal Clarkson <info@artocraft.nl>"]
 python = "^3.9"
 introductie = "^0.1.4"
 coverage = "^6.0"
+black = "^21.9b0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

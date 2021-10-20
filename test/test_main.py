@@ -8,4 +8,3 @@ class TestSuite(TestCase):
 
     def test_get_pascal_one_line(self):
         assert get_pascal_one_line() == 5
-
