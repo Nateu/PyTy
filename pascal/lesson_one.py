@@ -1,5 +1,4 @@
 from introductie import app
-from builtins import next
 
 
 def get_pascal() -> int:
