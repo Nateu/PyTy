@@ -1,5 +1,7 @@
 default: format flake pytest
 
+bdd: format flake mamba
+
 serve:
 	bash ./scripts/serve.sh
 
@@ -11,3 +13,6 @@ format:
 
 flake:
 	bash ./scripts/flake8.sh
+
+mamba:
+	bash ./scripts/mamba.sh

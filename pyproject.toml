@@ -10,6 +10,8 @@ introductie = "^0.1.4"
 coverage = "^6.0"
 black = "^21.9b0"
 flake8 = "^4.0.1"
+mamba = "^0.11.2"
+expects = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

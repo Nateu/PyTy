@@ -1,4 +1,12 @@
 [[package]]
+name = "args"
+version = "0.1.0"
+description = "Command Arguments for Humans."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "atomicwrites"
 version = "1.4.0"
 description = "Atomic file writes."
@@ -59,6 +67,17 @@ python-versions = ">=3.6"
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
+name = "clint"
+version = "0.5.1"
+description = "Python Command Line Interface Tools"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+args = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
@@ -76,6 +95,14 @@ python-versions = ">=3.6"
 
 [package.extras]
 toml = ["tomli"]
+
+[[package]]
+name = "expects"
+version = "0.9.0"
+description = "Expressive and extensible TDD/BDD assertion library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "flake8"
@@ -108,6 +135,18 @@ python-versions = ">=3.7,<4.0"
 
 [package.dependencies]
 namen = ">=0.4.0,<0.5.0"
+
+[[package]]
+name = "mamba"
+version = "0.11.2"
+description = "The definitive testing tool for Python. Born under the banner of Behavior Driven Development."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+clint = "*"
+coverage = "*"
 
 [[package]]
 name = "mccabe"
@@ -264,9 +303,12 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "1fa6f18a9de201926c6713e97a10690dae9d74366bee1be8b90caac0f3581018"
+content-hash = "9cc4ec62df8ee112ee51f84656654ee529e140eddf11c6531051443ffde12a7a"
 
 [metadata.files]
+args = [
+    {file = "args-0.1.0.tar.gz", hash = "sha256:a785b8d837625e9b61c39108532d95b85274acd679693b71ebb5156848fcf814"},
+]
 atomicwrites = [
     {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
     {file = "atomicwrites-1.4.0.tar.gz", hash = "sha256:ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a"},
@@ -282,6 +324,9 @@ black = [
 click = [
     {file = "click-8.0.3-py3-none-any.whl", hash = "sha256:353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"},
     {file = "click-8.0.3.tar.gz", hash = "sha256:410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"},
+]
+clint = [
+    {file = "clint-0.5.1.tar.gz", hash = "sha256:05224c32b1075563d0b16d0015faaf9da43aa214e4a2140e51f08789e7a4c5aa"},
 ]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
@@ -324,6 +369,9 @@ coverage = [
     {file = "coverage-6.0-pp37-none-any.whl", hash = "sha256:fff04bfefb879edcf616f1ce5ea6f4a693b5976bdc5e163f8464f349c25b59f0"},
     {file = "coverage-6.0.tar.gz", hash = "sha256:17983f6ccc47f4864fd16d20ff677782b23d1207bf222d10e4d676e4636b0872"},
 ]
+expects = [
+    {file = "expects-0.9.0.tar.gz", hash = "sha256:419902ccafe81b7e9559eeb6b7a07ef9d5c5604eddb93000f0642b3b2d594f4c"},
+]
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
     {file = "flake8-4.0.1.tar.gz", hash = "sha256:806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"},
@@ -335,6 +383,9 @@ iniconfig = [
 introductie = [
     {file = "introductie-0.1.4-py3-none-any.whl", hash = "sha256:9f672119ec87837bb7e77b99e58ce9548d42ce6e436dd25ddd58efb233fb8cf1"},
     {file = "introductie-0.1.4.tar.gz", hash = "sha256:e5c176b7d0376e6b689639c6cbb0fea26245eb924bcf7d741100ce204f1f51a4"},
+]
+mamba = [
+    {file = "mamba-0.11.2.tar.gz", hash = "sha256:75cfc6dfd287dcccaf86dd753cf48e0a7337487c7c3fafda05a6a67ded6da496"},
 ]
 mccabe = [
     {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
