@@ -14,13 +14,13 @@ test:
 	bash ./scripts/pytest.sh
 
 format:
-	bash ./scripts/black.sh
+	bash ./scripts/format.sh
 
 lint:
-	bash ./scripts/flakehell.sh
+	bash ./scripts/lint.sh
 
 sort:
-	bash ./scripts/isort.sh
+	bash ./scripts/sort.sh
 
 mamba:
 	bash ./scripts/mamba.sh
