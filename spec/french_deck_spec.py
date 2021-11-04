@@ -1,6 +1,8 @@
-from mamba import describe, context, it, before
-from expects import expect, equal
+from expects import equal, expect
+from mamba import before, context, describe, it
+
 from pascal.french_deck import FrenchDeck
+
 
 with describe("Given a french deck of cards") as self:
     with before.each:

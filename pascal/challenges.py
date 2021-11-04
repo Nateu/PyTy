@@ -1,5 +1,5 @@
-from typing import List
 import random
+from typing import List
 
 
 def get_every_second_number(numbers: List[int]) -> List[int]:

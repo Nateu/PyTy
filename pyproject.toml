@@ -9,12 +9,53 @@ python = "^3.9"
 introductie = "^0.1.4"
 coverage = "^6.0"
 black = "^21.9b0"
-flake8 = "^4.0.1"
 mamba = "^0.11.2"
 expects = "^0.9.0"
+flakehell = "^0.9.0"
+flake8 = "3.8.0"
+isort = "^5.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
+
+[tool.black]
+line-length = 120
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.flakehell]
+ignore = ["E203", "E266", "E501", "W503", "F403", "F401"]
+max_line_length = 120
+extend-ignore = "E203" # See https://github.com/PyCQA/pycodestyle/issues/373exclude = [".git", "__pycache__", "docs/source/conf.py", "old", "build", "dist", "mypy_boto3_output"]
+max-complexity = 18
+select = ["B","C","E","F","W","T4","B9"]
+
+[tool.flakehell.plugins]
+pycodestyle = ["+*"]
+pyflakes = ["+*"]
+pylint = ["+*"]
+
+[tool.isort]
+line_length = 120
+combine_as_imports = true
+balanced_wrapping = true
+lines_after_imports = 2
+include_trailing_comma = true
+multi_line_output = 5
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

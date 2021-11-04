@@ -1,18 +1,26 @@
-default: format flake pytest
+.PHONY: default init bdd test format sort lint
 
-bdd: format flake mamba
+default: test format sort lint
+
+bdd: mamba format sort lint
+
+init:
+	poetry install
 
 serve:
 	bash ./scripts/serve.sh
 
-pytest:
+test:
 	bash ./scripts/pytest.sh
 
 format:
 	bash ./scripts/black.sh
 
-flake:
-	bash ./scripts/flake8.sh
+lint:
+	bash ./scripts/flakehell.sh
+
+sort:
+	bash ./scripts/isort.sh
 
 mamba:
 	bash ./scripts/mamba.sh

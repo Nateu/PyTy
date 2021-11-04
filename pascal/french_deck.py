@@ -1,6 +1,7 @@
 import collections
 from random import choice
 
+
 Card = collections.namedtuple("Card", ["rank", "suit"])
 
 

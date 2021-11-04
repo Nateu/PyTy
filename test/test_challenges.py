@@ -1,9 +1,4 @@
-from pascal import (
-    get_every_second_number,
-    monkey_trouble,
-    has_L337,
-    multiply_opposite_side,
-)
+from pascal import get_every_second_number, has_L337, monkey_trouble, multiply_opposite_side
 
 
 def test_get_second_numbers():

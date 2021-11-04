@@ -1,4 +1,4 @@
-from pascal import User, Idea
+from pascal import Idea, User
 
 
 def test_create_a_user():
